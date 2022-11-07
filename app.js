@@ -35,7 +35,7 @@ app.post('/', function (req, res) {
 	const url = "https://us21.api.mailchimp.com/3.0/lists/b469291e68"
 	const options = {
 		method: "POST",
-		auth: "rohit:57e66d23ca37bf9e2565f1dfd84109e2-us21"
+		auth: ""
 	}
 
 	const request = https.request(url, options, function (response) {
@@ -65,12 +65,3 @@ app.listen(process.env.PORT || 3000, function () {
 	console.log("Server is running on port 3000");
 
 })
-
-
-// api key
-//57e66d23ca37bf9e2565f1dfd84109e2-us21
-
-
-//list id
-
-//b469291e68
